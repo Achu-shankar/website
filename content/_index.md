@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: ''
+title: 'Achu Shankar'
 date: 2022-10-24
 type: landing
 
@@ -39,9 +39,32 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: Who am I?
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
+    design:
+      background:
+        # gradient_start: '#c22ed0'
+        # gradient_end: '#7405fc'
+        
+        # gradient_angle: 135
+        text_color_light: true
+        # text_color: 'white'
+        # image:
+        #   # Name of image in `assets/media/`.
+        #   filename: coffee_bean.jpg
+        #   # Apply image filters?
+        #   filters:
+        #     # Darken the image? Range 0-1 where 1 is transparent and 0 is opaque.
+        #     brightness: 0.7
+        #   #  Image fit. Options are `cover` (default), `contain`, or `actual` size.
+        #   size: actual
+        #   # Image focal point. Options include `left`, `center` (default), or `right`.
+        #   position: right
+        #   # Use a fun parallax-like fixed background effect on desktop? true/false
+        #   parallax: true
+        #   text_color_light: true
+
   - block: skills
     content:
       title: Skills
@@ -55,105 +78,179 @@ sections:
       title: Experience
       # Date format for experience
       #   Refer to https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
+      date_format: Dec 2023
       # Experiences.
       #   Add/remove as many `experience` items below as you like.
       #   Required fields are `title`, `company`, and `date_start`.
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
+        - title: Research Intern
+          company: SOCR
+          company_url: 'https://socr.umich.edu/'
+          company_logo: 
+          location: Ann Arbor
+          date_start: '2023-12-01'
           date_end: ''
-          description: |2-
-              Responsibilities include:
+          description: Using generative models such as conditional GAN and diffusions models to generate synthetic brain scan images.
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+        - title: Research Intern
+          company: Robert Bosch Centre for Data Science & Artificial Intelligence
+          company_url: 'https://rbcdsai.iitm.ac.in/'
+          company_logo: 
+          location: Chennai
+          date_start: '2023-05-01'
+          date_end: '2023-08-31'
+          description: Implemented and optimized training techniques for large neural networks, focusing on LLMs. 
+
+        - title: Graduate Student Research Assistant
+          company: CASLAB
+          company_url: 'https://caslab.engin.umich.edu/'
+          company_logo: 
+          location: Ann Arbor
+          date_start: '2022-08-22'
+          date_end: '2023-05-01'
+          description: Worked on development of data-driven Reduced Order Models for computationally efficient numerical simulations.
+
+        - title: Research Assistant
+          company: Geophysical Flows Lab IITM
+          company_url: 'https://ioe.iitm.ac.in/project/geophysical-flows/'
+          company_logo: 
+          location: Ann Arbor
+          date_start: '2021-08-22'
+          date_end: '2022-07-01'
+          description: Worked on developing a drone based aerial surveillance system to collect spatio-temporal atmosheric data over oceans.
+
+        - title: Undergraduate Research Assistant
+          company: Instability in aircraft vortices
+          company_url: 'https://ioe.iitm.ac.in/project/geophysical-flows/'
+          company_logo: 
+          location: Ann Arbor
+          date_start: '2019-08-22'
+          date_end: '2021-07-01'
+          description: Investigated shortwave instability mechanisms affecting vortices in wakes of fixed-wing aircraft using analytical and numerical methods.
+        
+        - title: Undergraduate Research Assistant
+          company: EDAC
+          company_url: 'https://home.iitm.ac.in/nrv/'
+          company_logo: 
+          location: Ann Arbor
+          date_start: '2020-03-22'
+          date_end: '2021-06-01'
+          description: Developed a high-order accurate finite difference incompressible fluid solver with EDAC approach to simulate fluid flows over complex geometry.
+
+        - title: Aircraft Design Engineer Intern
+          company: The ePlane Company
+          company_url: 'https://www.eplane.ai/'
+          company_logo: 
+          location: Ann Arbor
+          date_start: '2020-06-22'
+          date_end: '2020-09-01'
+          description: Conducted analysis on a novel electric ducted propulsion system for a VTOL UAV
+        
+
+        - title: Software Developer
+          company: Jivass
+          company_url: 'https://jivass.com/'
+          company_logo: 
+          location: Ann Arbor
+          date_start: '2018-01-22'
+          date_end: '2018-05-01'
+          description: Developed thefundamental software to automate industrial textile machines and designed a user-friendly React-based interface for remote access and real-time monitoring.
+
+          
     design:
       columns: '2'
-  - block: accomplishments
-    content:
-      # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
-      subtitle:
-      # Date format: https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
-      # Accomplishments.
-      #   Add/remove as many `item` blocks below as you like.
-      #   `title`, `organization`, and `date_start` are the required parameters.
-      #   Leave other parameters empty if not required.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - certificate_url: https://www.coursera.org
-          date_end: ''
-          date_start: '2021-01-25'
-          description: ''
-          icon: coursera
-          organization: Coursera
-          organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
-          url: ''
-        - certificate_url: https://www.edx.org
-          date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          icon: edx
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          icon: datacamp
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
-          url: ''
-    design:
-      columns: '2'
-  - block: collection
-    id: posts
-    content:
-      title: Recent Posts
-      subtitle: ''
-      text: ''
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        folders:
-          - post
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: compact
-      columns: '2'
+      background:
+        gradient_start: '#c22ed0'
+        gradient_end: '#7405fc'
+        
+        gradient_angle: 135
+        text_color_light: true
+        # text_color: 'white'
+        image:
+          # Name of image in `assets/media/`.
+          filename: coffee_bean.jpg
+          # Apply image filters?
+          filters:
+            # Darken the image? Range 0-1 where 1 is transparent and 0 is opaque.
+            brightness: 1
+          #  Image fit. Options are `cover` (default), `contain`, or `actual` size.
+          size: cover
+          # Image focal point. Options include `left`, `center` (default), or `right`.
+          position: right
+          # Use a fun parallax-like fixed background effect on desktop? true/false
+          parallax: true
+          text_color_light: true
+  # - block: accomplishments
+  #   content:
+  #     # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
+  #     title: 'Accomplish&shy;ments'
+  #     subtitle:
+  #     # Date format: https://docs.hugoblox.com/customization/#date-format
+  #     date_format: Jan 2006
+  #     # Accomplishments.
+  #     #   Add/remove as many `item` blocks below as you like.
+  #     #   `title`, `organization`, and `date_start` are the required parameters.
+  #     #   Leave other parameters empty if not required.
+  #     #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+  #     items:
+  #       - certificate_url: https://www.coursera.org
+  #         date_end: ''
+  #         date_start: '2021-01-25'
+  #         description: ''
+  #         icon: coursera
+  #         organization: Coursera
+  #         organization_url: https://www.coursera.org
+  #         title: Neural Networks and Deep Learning
+  #         url: ''
+  #       - certificate_url: https://www.edx.org
+  #         date_end: ''
+  #         date_start: '2021-01-01'
+  #         description: Formulated informed blockchain models, hypotheses, and use cases.
+  #         icon: edx
+  #         organization: edX
+  #         organization_url: https://www.edx.org
+  #         title: Blockchain Fundamentals
+  #         url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
+  #       - certificate_url: https://www.datacamp.com
+  #         date_end: '2020-12-21'
+  #         date_start: '2020-07-01'
+  #         description: ''
+  #         icon: datacamp
+  #         organization: DataCamp
+  #         organization_url: https://www.datacamp.com
+  #         title: 'Object-Oriented Programming in R'
+  #         url: ''
+  #   design:
+  #     columns: '2'
+  # - block: collection
+  #   id: posts
+  #   content:
+  #     title: Recent Posts
+  #     subtitle: ''
+  #     text: ''
+  #     # Choose how many pages you would like to display (0 = all pages)
+  #     count: 5
+  #     # Filter on criteria
+  #     filters:
+  #       folders:
+  #         - post
+  #       author: ""
+  #       category: ""
+  #       tag: ""
+  #       exclude_featured: false
+  #       exclude_future: false
+  #       exclude_past: false
+  #       publication_type: ""
+  #     # Choose how many pages you would like to offset by
+  #     offset: 0
+  #     # Page order: descending (desc) or ascending (asc) date.
+  #     order: desc
+  #   design:
+  #     # Choose a layout view
+  #     view: compact
+  #     columns: '2'
   - block: portfolio
     id: projects
     content:
@@ -175,38 +272,63 @@ sections:
           tag: Deep Learning
         - name: Other
           tag: Demo
+
+      
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
-      view: showcase
+      view: 
+      # view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
-  - block: markdown
-    content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="demo" >}}
-    design:
-      columns: '1'
+      background:
+        # gradient_start: '#c22ed0'
+        # gradient_end: '#7405fc'
+        
+        # gradient_angle: 135
+        # text_color_light: true
+        # text_color: 'white'
+        # image:
+        #   # Name of image in `assets/media/`.
+        #   filename: coffee_bean.jpg
+        #   # Apply image filters?
+        #   filters:
+        #     # Darken the image? Range 0-1 where 1 is transparent and 0 is opaque.
+        #     brightness: 0.8
+        #   #  Image fit. Options are `cover` (default), `contain`, or `actual` size.
+        #   size: actual
+        #   # Image focal point. Options include `left`, `center` (default), or `right`.
+        #   position: right
+        #   # Use a fun parallax-like fixed background effect on desktop? true/false
+        #   parallax: true
+        #   text_color_light: true
+  # - block: markdown
+  #   content:
+  #     title: Gallery
+  #     subtitle: ''
+  #     text: |-
+  #       {{< gallery album="demo" >}}
+  #   design:
+  #     columns: '1'
+  # - block: collection
+  #   id: featured
+  #   content:
+  #     title: Featured Publications
+  #     filters:
+  #       folders:
+  #         - publication
+  #       featured_only: true
+  #   design:
+  #     columns: '2'
+  #     view: card
   - block: collection
     id: featured
     content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      columns: '2'
-      view: card
-  - block: collection
-    content:
-      title: Recent Publications
-      text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
+      title: Publications
+      # text: |-
+      #   {{% callout note %}}
+      #   Quickly discover relevant content by [filtering publications](./publication/).
+      #   {{% /callout %}}
       filters:
         folders:
           - publication
@@ -214,60 +336,60 @@ sections:
     design:
       columns: '2'
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - event
-    design:
-      columns: '2'
-      view: compact
-  - block: tag_cloud
-    content:
-      title: Popular Topics
-    design:
-      columns: '2'
+  # - block: collection
+  #   id: talks
+  #   content:
+  #     title: Recent & Upcoming Talks
+  #     filters:
+  #       folders:
+  #         - event
+  #   design:
+  #     columns: '2'
+  #     view: compact
+  # - block: tag_cloud
+  #   content:
+  #     title: Popular Topics
+  #   design:
+  #     columns: '2'
   - block: contact
     id: contact
     content:
       title: Contact
       subtitle:
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
+        Drop me a message !! 😉 
       # Contact (add or remove contact options as necessary)
-      email: test@example.org
-      phone: 888 888 88 88
-      appointment_url: 'https://calendly.com'
-      address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
+      email: achu.shankar2@gmail.com
+      # phone: 888 888 88 88
+      # appointment_url: 'https://calendly.com'
+      # address:
+      #   street: 450 Serra Mall
+      #   city: Stanford
+      #   region: CA
+      #   postcode: '94305'
+      #   country: United States
+      #   country_code: US
+      # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+      # office_hours:
+      #   - 'Monday 10:00 to 13:00'
+      #   - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'  
-      contact_links:
-        - icon: twitter
-          icon_pack: fab
-          name: DM Me
-          link: 'https://twitter.com/Twitter'
-        - icon: skype
-          icon_pack: fab
-          name: Skype Me
-          link: 'skype:echo123?call'
-        - icon: video
-          icon_pack: fas
-          name: Zoom Me
-          link: 'https://zoom.com'
+        latitude: '42.2771'
+        longitude: '-83.7382'  
+      # contact_links:
+      #   - icon: twitter
+      #     icon_pack: fab
+      #     name: DM Me
+      #     link: 'https://twitter.com/Twitter'
+        # - icon: skype
+        #   icon_pack: fab
+        #   name: Skype Me
+        #   link: 'skype:echo123?call'
+        # - icon: video
+        #   icon_pack: fas
+        #   name: Zoom Me
+        #   link: 'https://zoom.com'
       # Automatically link email and phone or display as text?
       autolink: true
       # Email form provider

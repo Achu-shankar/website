@@ -10,6 +10,7 @@ appearance:
   theme_night: minimal
   font: minimal
   font_size: L
+  color: zinc
 
 # SEO
 
@@ -35,19 +36,27 @@ header:
   navbar:
     enable: true
     align: l
+    blox: "floating-theme-toggler"
+    show_theme_chooser: true
     show_logo: true
     show_language: false
     show_day_night: true
     show_search: true
     highlight_active_link: true
-
+    logo:
+      text: "Sample logo"
+      filename: "icon.png"
+    button:
+      enable: true
+      text: "Get Started"
+      url: "https://hugoblox.com/templates/"
 # Site footer
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    # notice: '© {year} Me. This work is licensed under {license}'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false

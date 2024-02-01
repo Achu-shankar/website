@@ -1,0 +1,63 @@
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+<script>
+   // Get the target element
+// const animatedBox = document.getElementById('section-skills');
+
+// // Create an observer instance
+// const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             // Add a class to start the CSS animation
+//             animatedBox.classList.add('reveal');
+//             // Disconnect the observer once animation is triggered
+//             observer.disconnect();
+//         }
+//     });
+// });
+
+// // Start observing the target element
+// observer.observe(animatedBox);
+
+// const section = document.getElementById('section-skills');
+// const imgContent = document.querySelectorAll('#section-skills .row');
+// const objOptions = {
+//   root: null,
+//   threshold: 0.5,
+//   rootMargin: "-100px",
+// };
+// const sectionObserver = new IntersectionObserver(callBackFunction, objOptions);
+// sectionObserver.observe(section);
+// function callBackFunction(entries) {
+//   const [entry] = entries;
+//   console.log(entry);
+//   if (entry.isIntersecting) {
+//     // imgContent.classList.remove("hidden");
+//     entry.target.classList.add("reveal");
+//     // observer.disconnect();
+//   } else {
+//     // imgContent.classList.add("hidden");
+//   }
+// }
+
+const rows = document.querySelectorAll('.row');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('reveal');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { 
+    // root: null,
+    threshold: 0.2,
+    // rootMargin: "100px",
+    } );
+
+rows.forEach(row => {
+    observer.observe(row);
+});
+
+</script>

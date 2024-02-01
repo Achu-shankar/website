@@ -1,0 +1,12 @@
+.home-section-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    z-index: -1;
+}
+
+body {
+    font-family: "Sofia", sans-serif;
+  }

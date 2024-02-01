@@ -1,0 +1,161 @@
+// body {
+//     // font-family: "Trirong";
+//   }
+
+//   h1{
+//     font-family: "source sans pro";
+//   }
+  
+#about .home-section-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    // background: linear-gradient(135deg,#5443f7,#ed1858);
+    // background: radial-gradient(#6c2ced, #15f082);
+    background: radial-gradient(#5443f7,#ed1858);
+    // background: linear-gradient(to right, transparent, rgb(222, 57, 38)),url(https://i.pinimg.com/564x/5b/52/7f/5b527fe5205dd48e3a03ed219c89d7e3.jpg);
+    // background: linear-gradient(
+    // 217deg,
+    // rgb(231, 78, 78),
+    // rgba(255, 0, 0, 0) 70.71%
+    // ), linear-gradient(
+    // 127deg,
+    // rgb(105, 231, 105),
+    // rgba(0, 255, 0, 0) 70.71%
+    // ), linear-gradient(
+    // 336deg,
+    // rgb(77, 77, 228),
+    // rgba(0, 0, 255, 0) 70.71%
+    // );
+
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	// height: 100vh;
+}
+
+#profile {
+    text-align: center;
+    padding: 30px 10px;
+    position: relative;
+    // background-color: rgba(255, 255, 255, .15);  
+    // backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.296), inset 0 0 20px rgba(255, 255, 255, 0);
+    // box-shadow: inset 0 0 20px rgba(255, 255, 255, .5);
+    // background: inherit;
+    border-radius: 50px;
+    // background: rgba(0,0,0,0.4);
+    background-color: rgba(255, 255, 255, 0.15);  
+    backdrop-filter: blur(10px);
+}
+// #profile:before{
+//     content: '';
+//     border-radius: 10px;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+//     filter: blur(1px);
+//     background: inherit;
+// }
+
+.navbar{
+    backdrop-filter: blur(10px);
+    box-shadow: -2px 2px 10px 5px rgba(0, 0, 0, 0.419);
+    // border-radius: 10px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+// #section-experience {
+//     background: url("assets/media/coffee_bean.jpg");
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.row.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+
+// @keyframes reveal {
+//     to {
+//         opacity: 1;
+//         transform: translateY(0);
+//     }
+// }
+
+
+#section-experience .card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);  
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+    box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.466);
+}
+
+#section-experience .dark .card {
+    background: #343a4000;
+    color: rgb(255, 255, 255);
+}
+
+#section-experience .card {
+    background: #343a4000;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    // box-shadow: 0 0 10px 15px rgba(255, 255, 255, 0.296);
+}
+
+#section-experience .card:hover{
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.245);
+}
+
+// .card-body:hover{
+//     box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.245);
+// }
+
+.experience .m-2 .border, .experience .col.border-right {
+    border-color: #ed1858!important;
+}
+
+.experience .m-2 .border.exp-fill {
+    background-color: #ed1858 !important;
+}

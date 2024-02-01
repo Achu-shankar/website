@@ -85,7 +85,7 @@ skills:
         percent: 75
         icon: tasks
         icon_pack: fas
-      - name: Code Brewer and Coffee Connoisseur
+      - name: Code Brewer and Coffee Connoisseur 😉
         description: ''
         percent: 100
         icon: mug-hot

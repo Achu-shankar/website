@@ -25,7 +25,7 @@ organizations:
     url: https://umich.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter. Solving problems one bit at a time.
+bio: My research interests include Machine learning, numerical modelling and high performance computing. Solving problems one byte-sized solution at a time.
 
 # Interests to show in About widget
 interests:
